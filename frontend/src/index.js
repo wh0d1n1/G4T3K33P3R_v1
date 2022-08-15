@@ -1,8 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import App from "App";
 
-import 'bootstrap/dist/css/bootstrap.css';
+// Material Dashboard 2 PRO React Context Provider
+import { MaterialUIControllerProvider } from "context";
+import { AuthProvider } from "./context/AuthContext";
 
-import App from './App';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+  <BrowserRouter>
+  <AuthProvider>
+    <MaterialUIControllerProvider>
+      <App />
+    </MaterialUIControllerProvider>
+    </AuthProvider>
+  </BrowserRouter>,
+  document.getElementById("root")
+);
