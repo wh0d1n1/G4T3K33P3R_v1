@@ -40,7 +40,7 @@ const App = () => {
           This is a minimal application which demonstrates how React will interact
           with Django in a simple way by increasing a counter stored in a database.
         </p>
-        <p>Number of bees in the hive: {currentValue}</p>
+        <p>: {currentValue}</p>
         <p>
           <Button variant="primary" onClick={handleIncreaseCounter}>Increase value</Button>
         </p>
