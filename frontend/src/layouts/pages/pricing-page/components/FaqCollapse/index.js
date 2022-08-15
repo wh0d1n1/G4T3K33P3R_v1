@@ -25,7 +25,7 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
 // Material Dashboard 2 PRO React components
-import borders from "assets/theme/base/borders";
+import borders from "./assets/theme/base/borders";
 
 function FaqCollapse({ title, open, children, ...rest }) {
   const { borderWidth, borderColor } = borders;

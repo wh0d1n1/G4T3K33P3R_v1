@@ -1,17 +1,4 @@
-/**
-=========================================================
-* Material Dashboard 2 PRO React - v2.1.0
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 import { useState,useContext } from "react";
 
@@ -23,16 +10,16 @@ import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
-import MDInput from "components/MDInput";
-import MDButton from "components/MDButton";
+import MDBox from "./components/MDBox";
+import MDTypography from "./components/MDTypography";
+import MDInput from "./components/MDInput";
+import MDButton from "../../../../components/MDButton";
 
 // Authentication layout components
-import CoverLayout from "layouts/authentication/components/CoverLayout";
+import CoverLayout from "../../components/CoverLayout";
 
 // Images
-import bgImage from "assets/images/bg-sign-in-cover.jpeg";
+import bgImage from "./assets/images/bg-sign-in-cover.jpeg";
 
 function Cover() {
   const [rememberMe, setRememberMe] = useState(false);

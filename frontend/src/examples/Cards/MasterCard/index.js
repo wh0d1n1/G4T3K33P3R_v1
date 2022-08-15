@@ -25,7 +25,7 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
 // Images
-import masterCardLogo from "assets/images/logos/mastercard.png";
+import masterCardLogo from "./assets/images/logos/mastercard.png";
 
 function MasterCard({ color, number, holder, expires }) {
   const numbers = [...`${number}`];

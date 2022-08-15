@@ -41,7 +41,7 @@ import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarD
 import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
 // Material Dashboard 2 PRO React TS Base Styles
-import breakpoints from "assets/theme/base/breakpoints";
+import breakpoints from "./assets/theme/base/breakpoints";
 
 // Material Dashboard 2 PRO React context
 import { useMaterialUIController } from "context";

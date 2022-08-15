@@ -23,10 +23,10 @@ import MDTypography from "components/MDTypography";
 import MDButton from "components/MDButton";
 
 // Material Dashboard 2 PRO React base styles
-import borders from "assets/theme/base/borders";
+import borders from "./assets/theme/base/borders";
 
 // Images
-import masterCardLogo from "assets/images/logos/mastercard.png";
+import masterCardLogo from "./assets/images/logos/mastercard.png";
 
 function PaymentDetails() {
   const { borderWidth, borderColor } = borders;

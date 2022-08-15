@@ -28,7 +28,7 @@ import Tab from "@mui/material/Tab";
 import MDBox from "components/MDBox";
 
 // Material Dashboard 2 PRO React base styles
-import breakpoints from "assets/theme/base/breakpoints";
+import breakpoints from "./assets/theme/base/breakpoints";
 
 // Material Dashboard 2 PRO React examples
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";

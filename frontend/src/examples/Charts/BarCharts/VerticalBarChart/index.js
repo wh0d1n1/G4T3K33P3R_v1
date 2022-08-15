@@ -33,7 +33,7 @@ import MDTypography from "components/MDTypography";
 import configs from "examples/Charts/BarCharts/VerticalBarChart/configs";
 
 // Material Dashboard 2 PRO React base styles
-import colors from "assets/theme/base/colors";
+import colors from "./assets/theme/base/colors";
 
 function VerticalBarChart({ icon, title, description, height, chart }) {
   const chartDatasets = chart.datasets

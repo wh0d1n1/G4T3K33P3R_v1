@@ -32,7 +32,7 @@ import MDTypography from "components/MDTypography";
 import configs from "layouts/applications/calendar/components/ProductivityChart/configs";
 
 // Material Dashboard 2 PRO React base styles
-import typography from "assets/theme/base/typography";
+import typography from "./assets/theme/base/typography";
 
 function ProductivityChart() {
   const { size } = typography;
