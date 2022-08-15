@@ -2,7 +2,7 @@ FROM node:13.8.0-alpine as client-builder
 
 COPY frontend/package.json frontend/yarn.lock /
 
-RUN yarn install --frozen-lockfile --no-cache --production=false
+RUN yarn install --no-cache --production=false
 
 COPY frontend /
 
