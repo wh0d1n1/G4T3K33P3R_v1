@@ -1,4 +1,4 @@
-FROM node:13.8.0-alpine as client-builder
+FROM node:14.15.0-alpine as client-builder
 
 COPY frontend/package.json frontend/yarn.lock /
 
