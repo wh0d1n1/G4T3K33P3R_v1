@@ -10,7 +10,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
+import MDBox from "../../components/MDBox";
 
 // Custom styles for the SidenavCollapse
 import {
@@ -19,10 +19,10 @@ import {
   collapseIcon,
   collapseText,
   collapseArrow,
-} from "examples/Sidenav/styles/sidenavCollapse";
+} from "../../examples/Sidenav/styles/sidenavCollapse";
 
 // Material Dashboard 2 PRO React context
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../context";
 
 function SidenavCollapse({ icon, name, children, active, noCollapse, open, ...rest }) {
   const [controller] = useMaterialUIController();

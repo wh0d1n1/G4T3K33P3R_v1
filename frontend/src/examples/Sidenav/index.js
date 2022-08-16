@@ -15,17 +15,17 @@ import Link from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../components/MDBox";
+import MDTypography from "../../components/MDTypography";
 
 // Material Dashboard 2 PRO React examples
-import SidenavCollapse from "examples/Sidenav/SidenavCollapse";
-import SidenavList from "examples/Sidenav/SidenavList";
-import SidenavItem from "examples/Sidenav/SidenavItem";
+import SidenavCollapse from "../../examples/Sidenav/SidenavCollapse";
+import SidenavList from "../../examples/Sidenav/SidenavList";
+import SidenavItem from "../../examples/Sidenav/SidenavItem";
 
 // Custom styles for the Sidenav
-import SidenavRoot from "examples/Sidenav/SidenavRoot";
-import sidenavLogoLabel from "examples/Sidenav/styles/sidenav";
+import SidenavRoot from "../../examples/Sidenav/SidenavRoot";
+import sidenavLogoLabel from "../../examples/Sidenav/styles/sidenav";
 
 // Material Dashboard 2 PRO React context
 import {
@@ -33,7 +33,7 @@ import {
   setMiniSidenav,
   setTransparentSidenav,
   setWhiteSidenav,
-} from "context";
+} from "../../context";
 
 function Sidenav({ color, brand, brandName, routes, ...rest }) {
   const [openCollapse, setOpenCollapse] = useState(false);

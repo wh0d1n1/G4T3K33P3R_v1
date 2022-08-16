@@ -9,13 +9,13 @@ import ListItemText from "@mui/material/ListItemText";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
+import MDBox from "../../components/MDBox";
 
 // Custom styles for the SidenavItem
-import { item, itemContent, itemArrow } from "examples/Sidenav/styles/sidenavItem";
+import { item, itemContent, itemArrow } from "../../examples/Sidenav/styles/sidenavItem";
 
 // Material Dashboard 2 PRO React contexts
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../context";
 
 function SidenavItem({ color, name, active, nested, children, open, ...rest }) {
   const [controller] = useMaterialUIController();
