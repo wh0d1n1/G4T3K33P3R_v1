@@ -19,7 +19,7 @@ import MDBox from "components/MDBox";
 // Material Dashboard 2 PRO React examples
 import SalesTableCell from "examples/Tables/SalesTable/SalesTableCell";
 
-function SalesTable({ title, rows, shadow,renderTableCells }) {
+function SalesTable({ title, rows, shadow }) {
   const renderTableCells = rows.map((row, key) => {
     const tableRows = [];
     const rowKey = `row-${key}`;
@@ -60,7 +60,7 @@ function SalesTable({ title, rows, shadow,renderTableCells }) {
             </MDBox>
           </TableHead>
         ) : null}
-        <TableBody>{useMemo(() => renderTableCells, [rows])}</TableBody>
+        <TableBody>{useMemo(() => renderTableCells, [rows,renderTableCells])}</TableBody>
       </Table>
     </TableContainer>
   );
