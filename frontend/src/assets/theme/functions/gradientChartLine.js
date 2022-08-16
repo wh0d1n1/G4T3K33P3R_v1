@@ -1,24 +1,10 @@
-/**
-=========================================================
-* Material Dashboard 2 PRO React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 /**
   The gradientChartLine() function helps you to create a gradient color for the chart line
  */
 
 // Material Dashboard 2 PRO React helper functions
-import rgba from "./assets/theme/functions/rgba";
+import rgba from "./rgba";
 
 function gradientChartLine(chart, color, opacity = 0.2) {
   const ctx = chart.getContext("2d");

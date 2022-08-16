@@ -19,11 +19,11 @@ import Icon from "@mui/material/Icon";
 import Autocomplete from "@mui/material/Autocomplete";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
-import MDButton from "components/MDButton";
-import MDBadge from "components/MDBadge";
-import MDInput from "components/MDInput";
+import MDBox from "../../../../../../components/MDBox";
+import MDTypography from "../../../../../../components/MDTypography";
+import MDButton from "../../../../../../components/MDButton";
+import MDBadge from "../../../../../../components/MDBadge";
+import MDInput from "../../../../../../components/MDInput";
 
 function ProductInfo() {
   return (

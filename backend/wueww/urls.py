@@ -24,7 +24,5 @@ def index(request):
 
 urlpatterns = staticfiles_urlpatterns() + [
     path("", index, name="index"),
-    path("admin/", admin.site.urls),
-    path("api/v1/counter/", include("wueww.counter.urls")),
-    path("api/v1/healthcheck", include("health_check.urls")),
+    path("admin/", admin.site.urls)
 ]

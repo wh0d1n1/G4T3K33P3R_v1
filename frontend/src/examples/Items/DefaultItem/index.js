@@ -22,11 +22,11 @@ import PropTypes from "prop-types";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../components/MDBox";
+import MDTypography from "../../../components/MDTypography";
 
 // custom styles for the DefaultItem
-import defaultItemIconBox from "examples/Items/DefaultItem/styles";
+import defaultItemIconBox from "../../../examples/Items/DefaultItem/styles";
 
 const DefaultItem = forwardRef(({ color, icon, title, description, ...rest }, ref) => (
   <MDBox {...rest} ref={ref} display="flex" alignItems="center">

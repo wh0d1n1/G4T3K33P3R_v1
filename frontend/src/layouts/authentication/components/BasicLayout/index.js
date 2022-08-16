@@ -2,8 +2,8 @@ import PropTypes from "prop-types";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
-import MDBox from "components/MDBox";
-import PageLayout from "examples/LayoutContainers/PageLayout";
+import MDBox from "../../../../components/MDBox";
+import PageLayout from "../../../../examples/LayoutContainers/PageLayout";
 
 function BasicLayout({ image, children }) {
   return (

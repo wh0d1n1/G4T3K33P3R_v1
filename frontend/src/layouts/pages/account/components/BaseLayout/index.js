@@ -25,15 +25,15 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
+import MDBox from "../../../../../components/MDBox";
 
 // Material Dashboard 2 PRO React base styles
-import breakpoints from "./assets/theme/base/breakpoints";
+import breakpoints from "../../../../../assets/theme/base/breakpoints";
 
 // Material Dashboard 2 PRO React examples
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
+import DashboardLayout from "../../../../../examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "../../../../../examples/Navbars/DashboardNavbar";
+import Footer from "../../../../../examples/Footer";
 
 function BaseLayout({ stickyNavbar, children }) {
   const [tabsOrientation, setTabsOrientation] = useState("horizontal");

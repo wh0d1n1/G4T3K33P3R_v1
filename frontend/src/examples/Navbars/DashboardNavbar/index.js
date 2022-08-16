@@ -29,13 +29,13 @@ import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDInput from "components/MDInput";
-import MDBadge from "components/MDBadge";
+import MDBox from "../../../components/MDBox";
+import MDInput from "../../../components/MDInput";
+import MDBadge from "../../../components/MDBadge";
 
 // Material Dashboard 2 PRO React examples
-import Breadcrumbs from "examples/Breadcrumbs";
-import NotificationItem from "examples/Items/NotificationItem";
+import Breadcrumbs from "../../../examples/Breadcrumbs";
+import NotificationItem from "../../../examples/Items/NotificationItem";
 
 // Custom styles for DashboardNavbar
 import {

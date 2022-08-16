@@ -20,13 +20,13 @@ import Icon from "@mui/material/Icon";
 import Tooltip from "@mui/material/Tooltip";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
-import MDButton from "components/MDButton";
+import MDBox from "../../../../../../components/MDBox";
+import MDTypography from "../../../../../../components/MDTypography";
+import MDButton from "../../../../../../components/MDButton";
 
 // Images
-import masterCardLogo from "./assets/images/logos/mastercard.png";
-import visaLogo from "./assets/images/logos/visa.png";
+import masterCardLogo from "../../../../../../assets/images/logos/mastercard.png";
+import visaLogo from "../../../../../../assets/images/logos/visa.png";
 
 // Material Dashboard 2 PRO React context
 import { useMaterialUIController } from "context";

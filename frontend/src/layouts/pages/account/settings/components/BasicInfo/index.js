@@ -19,14 +19,14 @@ import Grid from "@mui/material/Grid";
 import Autocomplete from "@mui/material/Autocomplete";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../../../../components/MDBox";
+import MDTypography from "../../../../../../components/MDTypography";
 
 // Settings page components
-import FormField from "layouts/pages/account/components/FormField";
+import FormField from "../../../../../../layouts/pages/account/components/FormField";
 
 // Data
-import selectData from "layouts/pages/account/settings/components/BasicInfo/data/selectData";
+import selectData from "../../../../../../layouts/pages/account/settings/components/BasicInfo/data/selectData";
 
 function BasicInfo() {
   return (

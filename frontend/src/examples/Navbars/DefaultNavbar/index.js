@@ -32,16 +32,16 @@ import MuiLink from "@mui/material/Link";
 import Container from "@mui/material/Container";
 
 // Material Dashboard 2 PRO React TS components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
-import MDButton from "components/MDButton";
+import MDBox from "../../../components/MDBox";
+import MDTypography from "../../../components/MDTypography";
+import MDButton from "../../../components/MDButton";
 
 // Material Dashboard 2 PRO React TS examples components
-import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
-import DefaultNavbarMobile from "examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
+import DefaultNavbarDropdown from "../../../examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
+import DefaultNavbarMobile from "../../../examples/Navbars/DefaultNavbar/DefaultNavbarMobile";
 
 // Material Dashboard 2 PRO React TS Base Styles
-import breakpoints from "./assets/theme/base/breakpoints";
+import breakpoints from "../../../assets/theme/base/breakpoints";
 
 // Material Dashboard 2 PRO React context
 import { useMaterialUIController } from "context";

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 
 import Container from 'react-bootstrap/Container'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Button from 'react-bootstrap/Button'
+import routes from "./routes";
 
 const VALUE_FETCHING = "loading..."
 
@@ -32,19 +34,25 @@ const App = () => {
       })
       .catch(catchFetchErrors)
   }
+    const getRoutes = (allRoutes) =>
+    allRoutes.map((route) => {
+      if (route.collapse) {
+        return getRoutes(route.collapse);
+      }
+
+      if (route.route) {
+        return <Route exact path={route.route} element={route.component} key={route.key} />;
+      }
+
+      return null;
+    });
+
   return (
     <Container className="pt-3">
-      <Jumbotron>
-        <h1>Würzburg Web Week bees counter</h1>
-        <p>
-          This is a minimal application which demonstrates how React will interact
-          with Django in a simple way by increasing a counter stored in a database.
-        </p>
-        <p>: {currentValue}</p>
-        <p>
-          <Button variant="primary" onClick={handleIncreaseCounter}>Increase value</Button>
-        </p>
-      </Jumbotron>
+      <Routes>
+        {getRoutes(routes)}
+        <Route path="*" element={<Navigate to="/authentication/sign-in/basic" />} />
+      </Routes>
     </Container>
   );
 }

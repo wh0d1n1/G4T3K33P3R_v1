@@ -27,11 +27,11 @@ import MuiLink from "@mui/material/Link";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React TS components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../components/MDBox";
+import MDTypography from "../../../components/MDTypography";
 
 // Material Dashboard 2 PRO React TS exampless
-import DefaultNavbarDropdown from "examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
+import DefaultNavbarDropdown from "../../../examples/Navbars/DefaultNavbar/DefaultNavbarDropdown";
 
 function DefaultNavbarMobile({ routes, open }) {
   const [collapse, setCollapse] = useState("");

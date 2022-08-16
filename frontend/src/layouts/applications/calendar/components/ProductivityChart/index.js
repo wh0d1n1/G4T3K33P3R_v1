@@ -25,14 +25,14 @@ import MenuItem from "@mui/material/MenuItem";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../../../components/MDBox";
+import MDTypography from "../../../../../components/MDTypography";
 
 // Chart configurations
-import configs from "layouts/applications/calendar/components/ProductivityChart/configs";
+import configs from "../../../../../layouts/applications/calendar/components/ProductivityChart/configs";
 
 // Material Dashboard 2 PRO React base styles
-import typography from "./assets/theme/base/typography";
+import typography from "../../../../../assets/theme/base/typography";
 
 function ProductivityChart() {
   const { size } = typography;
@@ -97,7 +97,7 @@ function ProductivityChart() {
               <Line data={data} options={options} />
             </MDBox>
           ),
-          [chart]
+          [data, options]
         )}
       </MDBox>
     </Card>

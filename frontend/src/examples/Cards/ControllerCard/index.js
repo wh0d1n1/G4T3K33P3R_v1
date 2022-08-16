@@ -21,11 +21,11 @@ import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../components/MDBox";
+import MDTypography from "../../../components/MDTypography";
 
 // Material Dashboard 2 PRO React context
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../../context";
 
 function ControllerCard({ color, state, icon, title, description, onChange }) {
   const [controller] = useMaterialUIController();

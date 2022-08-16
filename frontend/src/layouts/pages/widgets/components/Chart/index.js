@@ -25,17 +25,17 @@ import { Line } from "react-chartjs-2";
 import Card from "@mui/material/Card";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../../../components/MDBox";
+import MDTypography from "../../../../../components/MDTypography";
 
 // Material Dashboard 2 PRO React helper functions
-import gradientChartLine from "./assets/theme/functions/gradientChartLine";
+import gradientChartLine from "../../../../../assets/theme/functions/gradientChartLine";
 
 // Chart configurations
-import configs from "layouts/pages/widgets/components/Chart/configs";
+import configs from "../../../../../layouts/pages/widgets/components/Chart/configs";
 
 // Material Dashboard 2 PRO React base styles
-import colors from "./assets/theme/base/colors";
+import colors from "../../../../../assets/theme/base/colors";
 
 function Chart({ title, count, percentage, chart }) {
   const chartRef = useRef(null);
@@ -80,7 +80,7 @@ function Chart({ title, count, percentage, chart }) {
             <Line data={data} options={options} />
           </MDBox>
         ),
-        [chartData]
+        [data, options]
       )}
     </Card>
   );

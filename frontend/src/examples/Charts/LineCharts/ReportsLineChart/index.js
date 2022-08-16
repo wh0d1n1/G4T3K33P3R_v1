@@ -1,17 +1,4 @@
-/**
-=========================================================
-* Material Dashboard 2 PRO React - v2.1.0
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 import { useMemo } from "react";
 
@@ -27,11 +14,11 @@ import Divider from "@mui/material/Divider";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../../components/MDBox";
+import MDTypography from "../../../../components/MDTypography";
 
 // ReportsLineChart configurations
-import configs from "examples/Charts/LineCharts/ReportsLineChart/configs";
+import configs from "../../../../examples/Charts/LineCharts/ReportsLineChart/configs";
 
 function ReportsLineChart({ color, title, description, date, chart }) {
   const { data, options } = configs(chart.labels || [], chart.datasets || {});

@@ -19,20 +19,20 @@ import Card from "@mui/material/Card";
 import Divider from "@mui/material/Divider";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
+import MDBox from "../../../../components/MDBox";
 
 // Material Dashboard 2 PRO React examples
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
-import Footer from "examples/Footer";
+import DashboardLayout from "../../../../examples/LayoutContainers/DashboardLayout";
+import DashboardNavbar from "../../../../examples/Navbars/DashboardNavbar";
+import Footer from "../../../../examples/Footer";
 
 // OrderDetails page components
-import Header from "layouts/ecommerce/orders/order-details/components/Header";
-import OrderInfo from "layouts/ecommerce/orders/order-details/components/OrderInfo";
-import TrackOrder from "layouts/ecommerce/orders/order-details/components/TrackOrder";
-import PaymentDetails from "layouts/ecommerce/orders/order-details/components/PaymentDetails";
-import BillingInformation from "layouts/ecommerce/orders/order-details/components/BillingInformation";
-import OrderSummary from "layouts/ecommerce/orders/order-details/components/OrderSummary";
+import Header from "../../../../layouts/ecommerce/orders/order-details/components/Header";
+import OrderInfo from "../../../../layouts/ecommerce/orders/order-details/components/OrderInfo";
+import TrackOrder from "../../../../layouts/ecommerce/orders/order-details/components/TrackOrder";
+import PaymentDetails from "../../../../layouts/ecommerce/orders/order-details/components/PaymentDetails";
+import BillingInformation from "../../../../layouts/ecommerce/orders/order-details/components/BillingInformation";
+import OrderSummary from "../../../../layouts/ecommerce/orders/order-details/components/OrderSummary";
 
 function OrderDetails() {
   return (

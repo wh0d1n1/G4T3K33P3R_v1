@@ -23,14 +23,14 @@ import Grid from "@mui/material/Grid";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../../../components/MDBox";
+import MDTypography from "../../../../../components/MDTypography";
 
 // Material Dashboard 2 PRO React examples
-import SalesTable from "examples/Tables/SalesTable";
+import SalesTable from "../../../../../examples/Tables/SalesTable";
 
 // Data
-import salesTableData from "layouts/dashboards/analytics/components/SalesByCountry/data/salesTableData";
+import salesTableData from "../../../../../layouts/dashboards/analytics/components/SalesByCountry/data/salesTableData";
 
 function SalesByCountry() {
   return (

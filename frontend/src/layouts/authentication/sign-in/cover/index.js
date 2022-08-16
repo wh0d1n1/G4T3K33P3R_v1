@@ -1,5 +1,3 @@
-
-
 import { useState,useContext } from "react";
 
 // react-router-dom components
@@ -8,18 +6,23 @@ import { Link } from "react-router-dom";
 // @mui material components
 import Card from "@mui/material/Card";
 import Switch from "@mui/material/Switch";
+import MuiLink from "@mui/material/Link";
+import Grid from "@mui/material/Grid";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "./components/MDBox";
-import MDTypography from "./components/MDTypography";
-import MDInput from "./components/MDInput";
+import MDBox from "../../../../components/MDBox";
+import MDTypography from "../../../../components/MDTypography";
+import MDInput from "../../../../components/MDInput";
 import MDButton from "../../../../components/MDButton";
 
 // Authentication layout components
 import CoverLayout from "../../components/CoverLayout";
+import AuthContext from "../../../../context/AuthContext";
 
 // Images
-import bgImage from "./assets/images/bg-sign-in-cover.jpeg";
+import bgImage from "../../../../assets/images/bg-sign-in-cover.jpeg";
 
 function Cover() {
   const [rememberMe, setRememberMe] = useState(false);
@@ -60,7 +63,6 @@ function Cover() {
             </Grid>
             <Grid item xs={2}>
               <MDTypography component={MuiLink} href="#" variant="body1" color="white">
-                <GoogleIcon color="inherit" />
               </MDTypography>
             </Grid>
           </Grid>

@@ -20,11 +20,11 @@ import PropTypes from "prop-types";
 import Icon from "@mui/material/Icon";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDBadge from "components/MDBadge";
-import MDTypography from "components/MDTypography";
-import MDAvatar from "components/MDAvatar";
-import MDProgress from "components/MDProgress";
+import MDBox from "../../../../../components/MDBox";
+import MDBadge from "../../../../../components/MDBadge";
+import MDTypography from "../../../../../components/MDTypography";
+import MDAvatar from "../../../../../components/MDAvatar";
+import MDProgress from "../../../../../components/MDProgress";
 
 // Custom styles for the Card
 

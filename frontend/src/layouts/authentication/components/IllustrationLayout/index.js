@@ -20,18 +20,18 @@ import PropTypes from "prop-types";
 import Grid from "@mui/material/Grid";
 
 // Material Dashboard 2 PRO React components
-import MDBox from "components/MDBox";
-import MDTypography from "components/MDTypography";
+import MDBox from "../../../../components/MDBox";
+import MDTypography from "../../../../components/MDTypography";
 
 // Material Dashboard 2 PRO React examples
-import DefaultNavbar from "examples/Navbars/DefaultNavbar";
-import PageLayout from "examples/LayoutContainers/PageLayout";
+import DefaultNavbar from "../../../../examples/Navbars/DefaultNavbar";
+import PageLayout from "../../../../examples/LayoutContainers/PageLayout";
 
 // Material Dashboard 2 PRO React page layout routes
-import pageRoutes from "page.routes";
+import pageRoutes from "../../../../page.routes";
 
 // Material Dashboard 2 PRO React context
-import { useMaterialUIController } from "context";
+import { useMaterialUIController } from "../../../../context";
 
 function IllustrationLayout({ header, title, description, illustration, children }) {
   const [controller] = useMaterialUIController();
