@@ -22,7 +22,7 @@ export const AuthProvider = ({ children }) => {
   let navigate = useNavigate();
 
   const loginUser = async (username, password) => {
-    const response = await fetch("https://g4t3k33p3r.herokuapp.com/api/token/", {
+    const response = await fetch("/api/token/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password })
@@ -40,7 +40,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const registerUser = async (username, password, password2) => {
-    const response = await fetch("https://g4t3k33p3r.herokuapp.com:8000/api/register/", {
+    const response = await fetch("/api/register/", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -50,7 +50,7 @@ export const AuthProvider = ({ children }) => {
       })
     });
     if (response.status === 201) {
-      navigate("/authentication/sign-in", { replace: true });
+      navigate("/authentication/sign-in/basic", { replace: true });
     } else {
       alert("Something went wrong!");
     }
@@ -60,7 +60,7 @@ export const AuthProvider = ({ children }) => {
     setAuthTokens(null);
     setUser(null);
     localStorage.removeItem("authTokens");
-    navigate("/authentication/sign-in", { replace: true });
+    navigate("/authentication/sign-in/basic", { replace: true });
   };
 
   const contextData = {

@@ -136,7 +136,7 @@ export default function App() {
             <Sidenav
               color={sidenavColor}
               brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
-              brandName="Material Dashboard PRO"
+              brandName="G4T3K33P3R"
               routes={routes}
               onMouseEnter={handleOnMouseEnter}
               onMouseLeave={handleOnMouseLeave}
@@ -148,7 +148,7 @@ export default function App() {
         {layout === "vr" && <Configurator />}
         <Routes>
           {getRoutes(routes)}
-          <Route path="*" element={<Navigate to="/authentication/sign-in/basic" />} />
+          <Route path="*" element={<Navigate to="/dashboards/analytics" />} />
         </Routes>
       </ThemeProvider>
     </CacheProvider>
@@ -172,7 +172,7 @@ export default function App() {
       {layout === "vr" && <Configurator />}
       <Routes>
         {getRoutes(routes)}
-        <Route path="*" element={<Navigate to="/authentication/sign-in/basic" />} />
+        <Route path="*" element={<Navigate to="/dashboards/analytics" />} />
       </Routes>
     </ThemeProvider>
   );
