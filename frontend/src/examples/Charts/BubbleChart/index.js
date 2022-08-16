@@ -92,7 +92,7 @@ function BubbleChart({ icon, title, description, height, chart }) {
             <Bubble data={data} options={options} />
           </MDBox>
         ),
-        [chart, height]
+        [chart, height,data,options]
       )}
     </MDBox>
   );

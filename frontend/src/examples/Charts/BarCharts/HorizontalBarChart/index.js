@@ -90,7 +90,7 @@ function HorizontalBarChart({ icon, title, description, height, chart }) {
             <Bar data={data} options={options} />
           </MDBox>
         ),
-        [chart, height]
+        [chart, height,data,options]
       )}
     </MDBox>
   );
