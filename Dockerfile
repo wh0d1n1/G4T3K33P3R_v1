@@ -26,4 +26,4 @@ COPY --from=client-builder /build /frontend/build
 
 RUN DATABASE_URL='' python manage.py collectstatic --noinput
 
-CMD gunicorn wueww.wsgi --log-file -
+CMD gunicorn backend.wsgi --log-file -
