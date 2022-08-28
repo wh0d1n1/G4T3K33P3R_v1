@@ -76,6 +76,35 @@ import Icon from "@mui/material/Icon";
 import profilePicture from "./assets/images/propic.jpeg";
 
 const routes = [
+  
+  { type: "title", title: "Docs", key: "title-docs" },
+  { type: "divider", key: "divider-1" },
+  {
+    name: "Sign In",
+    key: "sign-in",
+    collapse: [
+      {
+        name: "Basic",
+        key: "basic",
+        route: "/authentication/sign-in/basic",
+        component: <SignInBasic />,
+      },
+      {
+        name: "Cover",
+        key: "cover",
+        route: "/authentication/sign-in/cover",
+        component: <SignInCover />,
+      },
+      {
+        name: "Illustration",
+        key: "illustration",
+        route: "/authentication/sign-in/illustration",
+        component: <SignInIllustration />,
+      },
+    ],
+  },
+
+  /*
   {
     type: "collapse",
     name: "Travis Padilla",
@@ -352,7 +381,7 @@ const routes = [
       },
     ],
   },
-  /*{ type: "divider", key: "divider-1" },
+  { type: "divider", key: "divider-1" },
   { type: "title", title: "Docs", key: "title-docs" },
   {
     type: "collapse",
