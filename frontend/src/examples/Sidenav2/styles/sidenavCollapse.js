@@ -28,8 +28,8 @@ function collapseItem(theme, ownerState) {
     display: "flex",
     alignItems: "center",
     width: "100%",
-    padding: `${pxToRem(8)} ${pxToRem(16)}`,
-    margin: `${pxToRem(1.5)} ${pxToRem(16)}`,
+    padding: `${pxToRem(5)} ${pxToRem(16)}`,
+    margin: `${pxToRem(0)} ${pxToRem(16)}`,
     borderRadius: borderRadius.md,
     cursor: "pointer",
     userSelect: "none",
@@ -89,12 +89,12 @@ function collapseText(theme, ownerState) {
   const { pxToRem } = functions;
 
   return {
-    marginLeft: pxToRem(10),
+    marginLeft: pxToRem(1),
 
     [breakpoints.up("xl")]: {
       opacity: miniSidenav || (miniSidenav && transparentSidenav) ? 0 : 1,
       maxWidth: miniSidenav || (miniSidenav && transparentSidenav) ? 0 : "100%",
-      marginLeft: miniSidenav || (miniSidenav && transparentSidenav) ? 0 : pxToRem(10),
+      marginLeft: miniSidenav || (miniSidenav && transparentSidenav) ? 0 : pxToRem(1),
       transition: transitions.create(["opacity", "margin"], {
         easing: transitions.easing.easeInOut,
         duration: transitions.duration.standard,

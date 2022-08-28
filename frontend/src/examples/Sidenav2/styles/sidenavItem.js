@@ -1,4 +1,3 @@
-
 function item(theme, ownerState) {
   const { palette, borders, functions, transitions } = theme;
   const { active, color, transparentSidenav, whiteSidenav, darkMode } = ownerState;
@@ -58,7 +57,7 @@ function itemContent(theme, ownerState) {
     alignItems: "center",
     justifyContent: "space-between",
     width: "100%",
-    padding: `${pxToRem(12)} ${pxToRem(16)}`,
+    padding: `${pxToRem(6)} ${pxToRem(16)}`,
     marginLeft: pxToRem(18),
     userSelect: "none",
     position: "relative",
@@ -139,3 +138,4 @@ function itemArrow(theme, ownerState) {
 }
 
 export { item, itemContent, itemArrow };
+

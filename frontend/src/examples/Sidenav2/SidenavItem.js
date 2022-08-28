@@ -1,17 +1,3 @@
-/**
-=========================================================
-* Material Dashboard 2 PRO React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
 
 // prop-types is a library for typechecking of props.
 import PropTypes from "prop-types";
@@ -29,7 +15,7 @@ import MDBox from "../../components/MDBox";
 import { item, itemContent, itemArrow } from "./styles/sidenavItem";
 
 // Material Dashboard 2 PRO React contexts
-import { useMaterialUIController } from "../../context/index";
+import { useMaterialUIController } from "../../context";
 
 function SidenavItem({ color, name, active, nested, children, open, ...rest }) {
   const [controller] = useMaterialUIController();
