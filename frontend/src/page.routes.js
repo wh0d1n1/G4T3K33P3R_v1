@@ -121,7 +121,7 @@ const pageRoutes = [
         collapse: [
           {
             name: "basic",
-            route: "/authentication/sign-in/basic",
+            route: "/login",
           },
           {
             name: "cover",

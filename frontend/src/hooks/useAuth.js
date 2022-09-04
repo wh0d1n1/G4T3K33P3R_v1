@@ -1,9 +1,9 @@
 import { useContext } from 'react';
 //
-import { AuthContext } from '../contexts/JWTContext';
-// import { AuthContext } from '../contexts/Auth0Context';
-// import { AuthContext } from '../contexts/FirebaseContext';
-// import { AuthContext } from '../contexts/AwsCognitoContext';
+import { AuthContext } from '../context/JWTContext';
+// import { AuthContext } from '../context/Auth0Context';
+// import { AuthContext } from '../context/FirebaseContext';
+// import { AuthContext } from '../context/AwsCognitoContext';
 
 // ----------------------------------------------------------------------
 
